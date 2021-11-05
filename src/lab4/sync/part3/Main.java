@@ -1,6 +1,8 @@
 package lab4.sync.part3;
 
 public class Main {
+    public static final Object lock = new Object();
+
     public static void main(String[] args) throws InterruptedException {
         Thread thread1 = new FirstThread(1);
         Thread thread2 = new Thread(new SecondThread(2));

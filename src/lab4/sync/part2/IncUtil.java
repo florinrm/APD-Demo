@@ -8,6 +8,15 @@ public class IncUtil {
         a++;
     }
 
+    /*
+    // o alta forma de a rescrie incrementA()
+    public void incrementA() {
+        synchronized(this) {
+            a++;
+        }
+    }
+     */
+
     // acelasi lucru ca mai sus
     public void incrementB() {
         synchronized (this) {

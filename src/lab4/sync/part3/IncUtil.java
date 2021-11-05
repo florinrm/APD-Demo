@@ -8,12 +8,28 @@ public class IncUtil {
         a++;
     }
 
+    /*
+    public static void incrementA() {
+        synchronized (IncUtil.class) {
+            a++;
+        }
+    }
+     */
+
     // acelasi lucru ca mai sus
     public static void incrementB() {
         synchronized (IncUtil.class) {
             b++;
         }
     }
+
+    /*
+    public static void incrementB() {
+        synchronized (Main.lock) {
+            b++;
+        }
+    }
+    */
 
     public static int getA() {
         return a;
