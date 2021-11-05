@@ -10,5 +10,6 @@ public class SecondThread implements Runnable {
     @Override
     public void run() {
         System.out.println("Hello world from thread " + id);
+        System.out.println(Thread.currentThread().getName());
     }
 }
